@@ -14,7 +14,7 @@ app.get('/',function(req,res) {
 });
 
 app.get('/template',function(req,res) {
-	var index = 0;
+	var index = Math.floor((Math.random() * 2) + 1)-1;
 	res.render('template.html', {root: __dirname, name: names[index], link1: links1[index], link2: links2[index]})
 });
 
