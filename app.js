@@ -10,18 +10,10 @@ var links2 = ['https://echoar-storage.s3.us-east-2.amazonaws.com/0_model_samples
 var names = ['skyscraper','fox']
 
 app.get('/',function(req,res) {
-    res.sendFile('./client/index.html', { root: __dirname })
-});
-
-app.get('/template',function(req,res) {
 	var index = Math.floor((Math.random() * 2) + 1)-1;
 	res.render('template.html', {root: __dirname, name: names[index], link1: links1[index], link2: links2[index]})
 });
 
-app.get('/fox',function(req,res) {
-    res.sendFile('./client/fox.html', { root: __dirname })
-});
-
-app.use('/client',express.static('./client', { root: __dirname }));
+app.use('/js',express.static('./js', { root: __dirname }));
 
 serv.listen(process.env.PORT || 3000)
