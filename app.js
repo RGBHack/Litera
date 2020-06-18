@@ -9,4 +9,4 @@ app.get('/',function(req,res) {
 
 app.use('/client',express.static('./client', { root: __dirname }));
 
-serv.listen(3000 || process.env.PORT);
+serv.listen(process.env.PORT || 3000)
