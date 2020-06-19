@@ -28,7 +28,7 @@ app.get('/login',function (req,res) {
 })
 
 app.get('/signup',function (req,res) {
-    res.render('login.html',{root: __dirname})
+    res.render('signup.html',{root: __dirname})
 })
 
 app.use('/js',express.static('./js', { root: __dirname }));

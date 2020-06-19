@@ -25,9 +25,6 @@
         <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
         <!-- Loads <model-viewer> for old browsers: -->
         <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
-        <!-- Custom Scripts -->
-        <script src="/js/config.js"></script>
-        <script src="/js/template.js"></script>
     </head>
 	<h1><%= name %></h1>
     <body>
@@ -37,4 +34,9 @@
             <img src="https://console.echoar.xyz/assets/images/echoAR - Logo.png" style="width: 5rem; position: absolute; bottom: 16px; right: 16px; ">
         </model-viewer>
     </body>
+    <!-- Custom Scripts & Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-auth.js"></script>
+    <script src="/js/config.js"></script>
+    <script src="/js/template.js"></script>
 </html>

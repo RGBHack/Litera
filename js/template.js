@@ -11,6 +11,6 @@ window.addEventListener('beforeunload', function(event) {
 
 firebase.auth().onAuthStateChanged((user) => {
     if (!user) {
-        window.location.pathname = '/'
+        window.location.pathname = '/login'
     }
 })
