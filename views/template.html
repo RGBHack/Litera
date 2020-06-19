@@ -36,7 +36,7 @@
     ></script>
     <script src="/js/echoar.js"></script>
   </head>
-  <h1><%= name %></h1>
+  <h1><%= name %></h1> <button onclick="logout()" id="logout-btn">Log Out</button>
   <body>
     <div id="card"></div>
     <model-viewer
@@ -60,7 +60,6 @@
         src="https://console.echoar.xyz/assets/images/echoAR - Logo.png"
         style="width: 5rem; position: absolute; bottom: 16px; right: 16px;"
       />
-      <input type="submit" value="Log Out" id="logout">
     </model-viewer>
   </body>
   <!-- Custom Scripts & Firebase -->

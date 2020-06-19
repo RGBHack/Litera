@@ -7,3 +7,7 @@ firebase.auth().onAuthStateChanged((user) => {
 function correctAnswer () {
 
 }
+
+function logout () {
+    firebase.auth().signOut()
+}
