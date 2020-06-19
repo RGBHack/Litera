@@ -9,3 +9,8 @@ window.addEventListener('beforeunload', function(event) {
     httpGetCleanup("polished-math-8279", "1592521104541", "webar-chrome");
 });
 
+firebase.auth().onAuthStateChanged((user) => {
+    if (!user) {
+        window.location.pathname = '/'
+    }
+})
