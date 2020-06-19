@@ -18,7 +18,7 @@ var objects = [
 },
 ]
 
-app.get('/product',function(req,res) {
+app.get('/',function(req,res) {
 	var object = objects[Math.floor((Math.random() * objects.length) + 1)-1];
 	res.render('template.html', {root: __dirname, name: object.name, link1: object.link1, link2: object.link2})
 });
