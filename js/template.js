@@ -1,10 +1,11 @@
-iframe = document.getElementById("iframe")
-function getElementByXpath(path) {
-	return iframe.contentDocument.evaluate(path, iframe.contentDocument, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+//cleanup
+function httpGetCleanup(key, timestamp, directory) {
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open("GET", "https://console.echoar.xyz/cleanup?key=" + key + "&timestamp=" + timestamp + "&directory=" + directory, false);
+    // false for synchronous request
+    xmlHttp.send(null);
 }
+window.addEventListener('beforeunload', function(event) {
+    httpGetCleanup("polished-math-8279", "1592521104541", "webar-chrome");
+});
 
-function myFunction () {
-getElementByXpath("/html/body/model-viewer/button").click()
-}
-
-//document.getElementById("iframe").onload = function() {setTimeout(myFunction,1000)};

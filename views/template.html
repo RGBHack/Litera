@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- <link rel="stylesheet" href="demo-styles.css"> -->
+        <link rel="stylesheet" href="/css/template.css">
         <!-- The following libraries and polyfills are recommended to maximize browser support -->
         <!-- NOTE: you must adjust the paths as appropriate for your project -->
         <!-- 🚨 REQUIRED: Web Components polyfill to support Edge and Firefox < 63 -->
@@ -25,41 +25,8 @@
         <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
         <!-- Loads <model-viewer> for old browsers: -->
         <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
-        <!-- Cleanup -->
-        <script>
-            function httpGetCleanup(key, timestamp, directory) {
-                var xmlHttp = new XMLHttpRequest();
-                xmlHttp.open("GET", "https://console.echoar.xyz/cleanup?key=" + key + "&timestamp=" + timestamp + "&directory=" + directory, false);
-                // false for synchronous request
-                xmlHttp.send(null);
-            }
-            window.addEventListener('beforeunload', function(event) {
-                httpGetCleanup("polished-math-8279", "1592521104541", "webar-chrome");
-            });
-        </script>
-        <style>
-            body {
-                background-color: #203864;
-            }
-
-            model-viewer {
-                --poster-color: #203864; }
-
-            button {
-                background-color: white;
-                border-radius: 5px;
-                border: none;
-                position: absolute;
-                top: 1rem;
-                right: 0.6rem;
-                text-align: center;
-                font-family: 'Verdana, Geneva, sans-serif';
-                font-size: medium;
-                font-weight: 500;
-                color: #203864;
-                padding: 1rem;
-            }
-        </style>
+        <!-- Custom Script -->
+        <script src="/js/template.js"></script>
     </head>
 	<h1><%= name %></h1>
     <body>
