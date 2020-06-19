@@ -51,4 +51,6 @@ app.use("/js", express.static("./js", { root: __dirname }));
 
 app.use("/css", express.static("./css", { root: __dirname }));
 
+app.use("/img", express.static("./img", { root: __dirname }));
+
 serv.listen(process.env.PORT || 3000);
