@@ -20,6 +20,13 @@ var objects = [
       "https://echoar-storage.s3.us-east-2.amazonaws.com/0_model_samples/6af76ce2-2f57-4ed0-82d8-42652f0eddbe.usdz",
     name: "fox",
   },
+  {
+    link1:
+      "https://echoar-storage.s3.us-east-2.amazonaws.com/polished-math-8279/d318ff9d-c85f-4e4a-9616-bf4a1ae350f7.glb",
+    link2:
+      "https://echoar-storage.s3.us-east-2.amazonaws.com/polished-math-8279/bf7f45a5-c195-41bd-93ba-7691a149d856.usdz",
+    name: "apple",
+  },
 ];
 
 app.get("/", function (req, res) {
