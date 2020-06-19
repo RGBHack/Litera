@@ -1,21 +1,22 @@
 body {
-    background-color: #203864;
+  background-color: #203864;
 }
 
 model-viewer {
-    --poster-color: #203864; }
+  --poster-color: #203864;
+}
 
 button {
-    background-color: white;
-    border-radius: 5px;
-    border: none;
-    position: absolute;
-    top: 1rem;
-    right: 0.6rem;
-    text-align: center;
-    font-family: 'Verdana, Geneva, sans-serif';
-    font-size: medium;
-    font-weight: 500;
-    color: #203864;
-    padding: 1rem;
+  background-color: white;
+  border-radius: 5px;
+  border: none;
+  position: absolute;
+  top: 1rem;
+  right: 0.6rem;
+  text-align: center;
+  font-family: "Verdana, Geneva, sans-serif";
+  font-size: medium;
+  font-weight: 500;
+  color: #203864;
+  padding: 1rem;
 }
