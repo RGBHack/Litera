@@ -18,13 +18,22 @@ var objects = [
 },
 ]
 
-app.get('/',function(req,res) {
+app.get('/product',function(req,res) {
 	var object = objects[Math.floor((Math.random() * objects.length) + 1)-1];
 	res.render('template.html', {root: __dirname, name: object.name, link1: object.link1, link2: object.link2})
 });
 
+app.get('/login',function (req,res) {
+    res.render('login.html',{root: __dirname})
+})
+
+app.get('/signup',function (req,res) {
+    res.render('login.html',{root: __dirname})
+})
+
 app.use('/js',express.static('./js', { root: __dirname }));
 
 app.use('/css',express.static('./css', { root: __dirname }));
+
 
 serv.listen(process.env.PORT || 3000)
