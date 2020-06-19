@@ -51,7 +51,7 @@ h2 {
   position: relative;
   padding: 0px;
   -webkit-box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
-  box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0px 60px 0 rgba(0, 0, 0, 0.3);
   text-align: center;
 }
 
@@ -308,4 +308,8 @@ input[type="password"]:placeholder {
 
 #icon {
   width: 60%;
+}
+
+h1 {
+  margin-top: 35px;
 }
