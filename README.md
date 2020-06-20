@@ -3,9 +3,9 @@
 </p>
 
 <h3 align="center">
-    <i>
-        An echoAR Web App for visual learners
-    </i>
+  <i>
+    An echoAR <a href="https://litera.cf">Web App</a> for visual learners
+  </i>
 </h3>
 
 <p align="center">
