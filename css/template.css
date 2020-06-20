@@ -33,3 +33,33 @@ body {
   height: 100vh;
   background-color: #203864;
 }
+
+.word-input {
+  padding: 0.4rem 0.3rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.submit-btn {
+  padding: 0.3rem 1rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: #2F5597;
+  color: white;
+}
+
+.logout-btn {
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+}
+
+.logout-btn:hover {
+  background-color: #2F5597;
+  color: white;
+}
+
+#form {
+  display: inline-block;
+}
