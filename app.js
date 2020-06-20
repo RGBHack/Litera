@@ -166,6 +166,38 @@ var objects = [
     name: "Umbrella",
     letter: "U",
   },
+  {
+    link1:
+      "https://echoar-storage.s3.us-east-2.amazonaws.com/polished-math-8279/152b095b-84cf-4688-950e-aca78a0f192d.glb",
+    link2:
+      "https://echoar-storage.s3.us-east-2.amazonaws.com/polished-math-8279/86fe986a-a8f2-4d30-9e8d-dc5f1210b09b.usdz",
+    name: "Whale",
+    letter: "W",
+  },
+  {
+    link1:
+      "https://echoar-storage.s3.us-east-2.amazonaws.com/polished-math-8279/0570a055-6d7c-4e3a-81bb-242d0ea7d0f8.glb",
+    link2:
+      "https://echoar-storage.s3.us-east-2.amazonaws.com/polished-math-8279/ecee3b39-b4e0-4add-8b17-bb91bf19671d.usdz",
+    name: "Turtle",
+    letter: "T",
+  },
+  {
+    link1:
+      "https://echoar-storage.s3.us-east-2.amazonaws.com/polished-math-8279/a6bb42d8-2096-42ff-bd6d-cee133ecf023.glb",
+    link2:
+      "https://echoar-storage.s3.us-east-2.amazonaws.com/polished-math-8279/a284c50c-3a8a-4d6b-9691-3b08d8101cca.usdz",
+    name: "Xylophone",
+    letter: "X",
+  },
+  {
+    link1:
+      "https://echoar-storage.s3.us-east-2.amazonaws.com/polished-math-8279/f01f5846-2db5-4426-b292-7eac35da71ad.glb",
+    link2:
+      "https://echoar-storage.s3.us-east-2.amazonaws.com/polished-math-8279/2daa9a6a-157f-42ba-a615-97d7d5be4776.usdz",
+    name: "Zebra",
+    letter: "Z",
+  },
 ];
 
 app.get("/", function (req, res) {
