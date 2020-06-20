@@ -1,12 +1,14 @@
 import { Response, Request } from "express";
+import express from "express";
+import { renderFile } from "ejs";
+import { Server } from "http";
 import { models, model } from "./models";
 
-var express = require("express");
 var app = express();
 
-var serv = require("http").Server(app);
+var serv = new Server(app);
 
-app.engine("html", require("ejs").renderFile);
+app.engine("html", renderFile);
 
 
 app.get("/", function (req: Request, res: Response) {
@@ -28,10 +30,10 @@ app.get("/signup", function (req: Request, res: Response) {
   res.render("signup.html", { root: __dirname });
 });
 
-app.use("/js", express.static("./js", { root: __dirname }));
+app.use("/js", express.static("./js"));
 
-app.use("/css", express.static("./css", { root: __dirname }));
+app.use("/css", express.static("./css"));
 
-app.use("/img", express.static("./img", { root: __dirname }));
+app.use("/img", express.static("./img"));
 
 serv.listen(process.env.PORT || 3000);
