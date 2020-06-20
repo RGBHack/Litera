@@ -1,12 +1,12 @@
-import { Response, Request } from "express";
+import { Response, Request, Express } from "express";
 import express from "express";
 import { renderFile } from "ejs";
 import { Server } from "http";
 import { models, model } from "./models";
 
-var app = express();
+var app: Express = express();
 
-var serv = new Server(app);
+var serv: Server = new Server(app);
 
 app.engine("html", renderFile);
 
