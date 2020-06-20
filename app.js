@@ -11,28 +11,28 @@ var objects = [
       "https://echoar-storage.s3.us-east-2.amazonaws.com/0_model_samples/d686a655-e800-430d-bfd2-e38cdfb0c9e9.glb",
     link2:
       "https://echoar-storage.s3.us-east-2.amazonaws.com/0_model_samples/d686a655-e800-430d-bfd2-e38cdfb0c9e9.usdz",
-    name: "skyscraper",
+    name: "Skyscraper",
   },
   {
     link1:
       "https://echoar-storage.s3.us-east-2.amazonaws.com/0_model_samples/6af76ce2-2f57-4ed0-82d8-42652f0eddbe.glb",
     link2:
       "https://echoar-storage.s3.us-east-2.amazonaws.com/0_model_samples/6af76ce2-2f57-4ed0-82d8-42652f0eddbe.usdz",
-    name: "fox",
+    name: "Fox",
   },
   {
     link1:
-      "https://echoar-storage.s3.us-east-2.amazonaws.com/polished-math-8279/b1a99a1f-caa6-45a0-8847-1d873b9657cb.glb",
+      "https://echoar-storage.s3.us-east-2.amazonaws.com/polished-math-8279/9d589ec2-8230-43d1-b167-da05f8dde3c8.glb",
     link2:
-      "https://echoar-storage.s3.us-east-2.amazonaws.com/polished-math-8279/8f15d73f-688b-44c3-993a-7f735c426a86.usdz",
-    name: "apple",
+      "https://echoar-storage.s3.us-east-2.amazonaws.com/polished-math-8279/6bbebac8-57d6-4bf1-8d82-e2f2ee992f25.usdz",
+    name: "Apple",
   },
 ];
 
 app.get("/", function (req, res) {
   var object = objects[Math.floor(Math.random() * objects.length + 1) - 1];
   res.render("template.html", {
-          root: __dirname,
+    root: __dirname,
     name: object.name,
     link1: object.link1,
     link2: object.link2,
