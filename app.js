@@ -22,9 +22,9 @@ var objects = [
   },
   {
     link1:
-      "https://echoar-storage.s3.us-east-2.amazonaws.com/polished-math-8279/d318ff9d-c85f-4e4a-9616-bf4a1ae350f7.glb",
+      "https://echoar-storage.s3.us-east-2.amazonaws.com/polished-math-8279/b1a99a1f-caa6-45a0-8847-1d873b9657cb.glb",
     link2:
-      "https://echoar-storage.s3.us-east-2.amazonaws.com/polished-math-8279/bf7f45a5-c195-41bd-93ba-7691a149d856.usdz",
+      "https://echoar-storage.s3.us-east-2.amazonaws.com/polished-math-8279/8f15d73f-688b-44c3-993a-7f735c426a86.usdz",
     name: "apple",
   },
 ];
@@ -32,7 +32,7 @@ var objects = [
 app.get("/", function (req, res) {
   var object = objects[Math.floor(Math.random() * objects.length + 1) - 1];
   res.render("template.html", {
-    root: __dirname,
+          root: __dirname,
     name: object.name,
     link1: object.link1,
     link2: object.link2,
