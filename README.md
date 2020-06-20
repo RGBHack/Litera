@@ -4,7 +4,7 @@
 
 <h3 align="center">
   <i>
-    An echoAR <a href="https://litera.cf">Web App</a> for visual learners
+    An echoAR <a href="https://litera.cf">Web App</a> for visual learners, built with TypeScript
   </i>
 </h3>
 
