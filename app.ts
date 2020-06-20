@@ -2,7 +2,7 @@ import { Response, Request, Express } from "express";
 import express from "express";
 import { renderFile } from "ejs";
 import { Server } from "http";
-import { models, model } from "./models";
+import { models, Model } from "./models";
 
 var app: Express = express();
 
@@ -12,13 +12,13 @@ app.engine("html", renderFile);
 
 
 app.get("/", function (req: Request, res: Response) {
-  var object: model = models[Math.floor(Math.random() * models.length + 1) - 1];
+  var model: Model = models[Math.floor(Math.random() * models.length + 1) - 1];
   res.render("template.html", {
     root: __dirname,
-    name: object.name,
-    link1: object.link1,
-    link2: object.link2,
-    letter: object.letter,
+    name: model.name,
+    usdz_link: model.usdz_link,
+    glb_link: model.glb_link,
+    letter: model.letter
   });
 });
 
