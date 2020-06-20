@@ -31,7 +31,7 @@
 ```sh
 git clone https://github.com/RGBHack/Litera.git
 npm i
-npm run start
+npm start
 ```
 
 ## 👨‍💻 Authors
