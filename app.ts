@@ -1,4 +1,4 @@
-import { Response } from "express";
+import { Response, Request } from "express";
 import { models, model } from "./models";
 
 var express = require("express");

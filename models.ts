@@ -1,6 +1,3 @@
-import { REPL_MODE_SLOPPY } from "repl";
-import { type } from "os";
-
 interface model {
     link1: string;
     link2: string;
