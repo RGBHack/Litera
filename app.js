@@ -27,6 +27,13 @@ var objects = [
       "https://echoar-storage.s3.us-east-2.amazonaws.com/polished-math-8279/6bbebac8-57d6-4bf1-8d82-e2f2ee992f25.usdz",
     name: "Apple",
   },
+  {
+    link1:
+      "https://echoar-storage.s3.us-east-2.amazonaws.com/polished-math-8279/b2d264b2-b932-4580-988c-1a44b2a9b13f.glb",
+    link2:
+      "https://echoar-storage.s3.us-east-2.amazonaws.com/polished-math-8279/d1564af7-9db9-441a-850c-25e4f1640db6.usdz",
+    name: "Basketball",
+  },
 ];
 
 app.get("/", function (req, res) {
