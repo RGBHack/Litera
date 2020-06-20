@@ -78,6 +78,70 @@ var objects = [
     name: "House",
     letter: "H",
   },
+  {
+    link1:
+      "https://echoar-storage.s3.us-east-2.amazonaws.com/polished-math-8279/5a3207c8-1629-4633-8639-11237a309437.glb",
+    link2:
+      "https://echoar-storage.s3.us-east-2.amazonaws.com/polished-math-8279/7be0eff8-5833-428b-96cd-87b67f21e9c5.usdz",
+    name: "Igloo",
+    letter: "I",
+  },
+  {
+    link1:
+      "https://echoar-storage.s3.us-east-2.amazonaws.com/polished-math-8279/d0ad9e5f-eadc-41d6-824f-3cdff629f9aa.glb",
+    link2:
+      "https://echoar-storage.s3.us-east-2.amazonaws.com/polished-math-8279/ba908a28-5fe5-4d57-a439-3d4cd2fa11be.usdz",
+    name: "Kite",
+    letter: "K",
+  },
+  {
+    link1:
+      "https://echoar-storage.s3.us-east-2.amazonaws.com/polished-math-8279/52a14608-994a-4d4c-b925-f4ef838fa535.glb",
+    link2:
+      "https://echoar-storage.s3.us-east-2.amazonaws.com/polished-math-8279/ba19fc72-f06d-49c4-8f9e-710fdcd11984.usdz",
+    name: "Jar",
+    letter: "J",
+  },
+  {
+    link1:
+      "https://echoar-storage.s3.us-east-2.amazonaws.com/polished-math-8279/3e8ad01b-0290-4014-9a94-43e7fa1a6b25.glb",
+    link2:
+      "https://echoar-storage.s3.us-east-2.amazonaws.com/polished-math-8279/e659399c-73a4-4764-9c2b-9adfb01e7a5a.usdz",
+    name: "Leaf",
+    letter: "L",
+  },
+  {
+    link1:
+      "https://echoar-storage.s3.us-east-2.amazonaws.com/polished-math-8279/bea535bb-995b-493e-bf14-a9f0f9f95de5.glb",
+    link2:
+      "https://echoar-storage.s3.us-east-2.amazonaws.com/polished-math-8279/0edf0a47-3f94-4ffd-81b0-5094412b5ab2.usdz",
+    name: "Moon",
+    letter: "M",
+  },
+  {
+    link1:
+      "https://echoar-storage.s3.us-east-2.amazonaws.com/polished-math-8279/aa6e6203-fe15-4d41-9424-484908e7a5df.glb",
+    link2:
+      "https://echoar-storage.s3.us-east-2.amazonaws.com/polished-math-8279/db952d32-7195-4f16-afda-38e2f05dd29b.usdz",
+    name: "Notebook",
+    letter: "N",
+  },
+  {
+    link1:
+      "https://echoar-storage.s3.us-east-2.amazonaws.com/polished-math-8279/85649f64-31c7-42a7-bf4f-b6383ddbac11.glb",
+    link2:
+      "https://echoar-storage.s3.us-east-2.amazonaws.com/polished-math-8279/55319a00-d9fe-4605-b335-9c9b32536e54.usdz",
+    name: "Orange",
+    letter: "O",
+  },
+  {
+    link1:
+      "https://echoar-storage.s3.us-east-2.amazonaws.com/polished-math-8279/ba679ef7-6938-4a9b-82a7-c488899afc10.glb",
+    link2:
+      "https://echoar-storage.s3.us-east-2.amazonaws.com/polished-math-8279/d7acf0d4-a510-45ce-84f6-049e768d93d7.usdz",
+    name: "Penguin",
+    letter: "P",
+  },
 ];
 
 app.get("/", function (req, res) {

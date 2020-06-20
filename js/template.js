@@ -24,14 +24,14 @@ form.onsubmit = (e) => {
         displayName: parseInt(current_user.displayName) + 10,
       })
       .then(() => {
-        if (confirm("Correct Answer")) {
+        if (confirm("Correct Answer. You have "+current_user.displayName+" points!")) {
           window.location.pathname = "/";
         } else {
           window.location.pathname = "/";
         }
       });
   } else {
-    if (confirm("Incorrect answer. The correct answer was "+answer)) {
+    if (confirm("Incorrect answer. The correct answer was "+answer+". You have "+current_user.displayName+" points!")) {
       window.location.pathname = "/";
     } else {
       window.location.pathname = "/";
