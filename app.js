@@ -142,6 +142,22 @@ var objects = [
     name: "Penguin",
     letter: "P",
   },
+  {
+    link1:
+      "https://echoar-storage.s3.us-east-2.amazonaws.com/polished-math-8279/a98b98f1-6a6f-436d-8172-78e30138a961.glb",
+    link2:
+      "https://echoar-storage.s3.us-east-2.amazonaws.com/polished-math-8279/536b7915-e9f8-41dc-8c3b-f8a23188a5b2.usdz",
+    name: "Star",
+    letter: "S",
+  },
+  {
+    link1:
+      "https://echoar-storage.s3.us-east-2.amazonaws.com/polished-math-8279/44c0812b-97d3-4b03-a39b-0dd5a2ad274c.glb",
+    link2:
+      "https://echoar-storage.s3.us-east-2.amazonaws.com/polished-math-8279/3cbfe575-8bdf-42ca-b58a-7b4b4f93c048.usdz",
+    name: "Robot",
+    letter: "R",
+  },
 ];
 
 app.get("/", function (req, res) {
