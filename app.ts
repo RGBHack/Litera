@@ -1,3 +1,5 @@
+import { Response } from "express";
+
 var express = require("express");
 var app = express();
 
@@ -215,7 +217,7 @@ var objects: obj[] = [
   },
 ];
 
-app.get("/", function (req: any, res: any) {
+app.get("/", function (req: Request, res: Response) {
   var object = objects[Math.floor(Math.random() * objects.length + 1) - 1];
   res.render("template.html", {
     root: __dirname,
@@ -226,11 +228,11 @@ app.get("/", function (req: any, res: any) {
   });
 });
 
-app.get("/login", function (req: any, res: any) {
+app.get("/login", function (req: Request, res: Response) {
   res.render("login.html", { root: __dirname });
 });
 
-app.get("/signup", function (req: any, res: any) {
+app.get("/signup", function (req: Request, res: Response) {
   res.render("signup.html", { root: __dirname });
 });
 
