@@ -158,6 +158,14 @@ var objects = [
     name: "Robot",
     letter: "R",
   },
+  {
+    link1:
+      "https://echoar-storage.s3.us-east-2.amazonaws.com/polished-math-8279/0a4c094e-ade0-48fd-864d-caf4e1544935.glb",
+    link2:
+      "https://echoar-storage.s3.us-east-2.amazonaws.com/polished-math-8279/0eb0bb19-c5b6-468b-98ec-d309b3825fde.usdz",
+    name: "Umbrella",
+    letter: "U",
+  },
 ];
 
 app.get("/", function (req, res) {
