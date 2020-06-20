@@ -198,6 +198,14 @@ var objects = [
     name: "Zebra",
     letter: "Z",
   },
+  {
+    link1:
+      "https://echoar-storage.s3.us-east-2.amazonaws.com/polished-math-8279/c40af116-f3b3-4d3e-b442-b767f7bb6070.glb",
+    link2:
+      "https://echoar-storage.s3.us-east-2.amazonaws.com/polished-math-8279/50cda243-ccd3-4628-b1bf-14ecd3263cbd.usdz",
+    name: "Car",
+    letter: "C",
+  },
 ];
 
 app.get("/", function (req, res) {
