@@ -5,7 +5,14 @@ var serv = require("http").Server(app);
 
 app.engine("html", require("ejs").renderFile);
 
-var objects = [
+type obj = {
+  link1: string;
+  link2: string;
+  name: string;
+  letter: string;
+};
+
+var objects: obj[] = [
   {
     link1:
       "https://echoar-storage.s3.us-east-2.amazonaws.com/0_model_samples/d686a655-e800-430d-bfd2-e38cdfb0c9e9.glb",
@@ -208,7 +215,7 @@ var objects = [
   },
 ];
 
-app.get("/", function (req, res) {
+app.get("/", function (req: any, res: any) {
   var object = objects[Math.floor(Math.random() * objects.length + 1) - 1];
   res.render("template.html", {
     root: __dirname,
@@ -219,11 +226,11 @@ app.get("/", function (req, res) {
   });
 });
 
-app.get("/login", function (req, res) {
+app.get("/login", function (req: any, res: any) {
   res.render("login.html", { root: __dirname });
 });
 
-app.get("/signup", function (req, res) {
+app.get("/signup", function (req: any, res: any) {
   res.render("signup.html", { root: __dirname });
 });
 
