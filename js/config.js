@@ -8,6 +8,7 @@ var config = {
   appId: "1:378226617950:web:06165f9ca0fcb2675f8ecf",
   measurementId: "G-BG0CMKR2YZ",
 };
+
 if (firebase.apps.length === 0) {
   firebase.initializeApp(config);
 }
