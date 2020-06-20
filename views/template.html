@@ -64,12 +64,13 @@
       placeholder="What is this object?"
     />
     <input class="submit-btn" type="submit" value="Submit" />
+    <button onclick="logout()" id="logout-btn" class="logout-btn">
+        <svg class="icon" height="15" width="18" id="logout-svg">
+          <use xlink:href="#logout"></use>
+        </svg>
+    </button>
   </form>
-  <button onclick="logout()" id="logout-btn" class="logout-btn">
-    <svg class="icon" height="15" width="18">
-      <use xlink:href="#logout"></use>
-    </svg>
-  </button>
+  
 
   <body>
     <div id="card"></div>
@@ -89,7 +90,7 @@
       shadow-intensity="1"
       loading="eager"
     >
-      <button slot="ar-button">👋👀 See in AR</button>
+      <button slot="ar-button" id="ar-btn">👋👀 See in AR</button>
       <img
         src="https://console.echoar.xyz/assets/images/echoAR - Logo.png"
         style="width: 5rem; position: absolute; bottom: 16px; right: 16px;"

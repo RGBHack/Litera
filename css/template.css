@@ -16,15 +16,18 @@ button {
   background-color: white;
   border-radius: 5px;
   border: none;
-  position: absolute;
-  top: 1rem;
-  right: 0.6rem;
   text-align: center;
   font-family: "Verdana, Geneva, sans-serif";
   font-size: medium;
   font-weight: 500;
   color: #203864;
   padding: 1rem;
+}
+
+#ar-btn {
+    position: absolute;
+    top: 1rem;
+    right: 0.6rem;
 }
 
 * {
@@ -51,13 +54,16 @@ button {
 
 .logout-btn {
   border-radius: 0.5rem;
-  padding: 0.5rem 1rem;
+  padding: 0.3rem 0.5rem;
   display: inline-block;
+  position: absolute;
+  top: 1.17rem;
+  right: 0.6rem;
+  background-color: #a30000;
 }
 
-.logout-btn:hover {
-  background-color: #2f5597;
-  color: white;
+#logout-svg {
+    fill: white;
 }
 
 #form {
