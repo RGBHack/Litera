@@ -15,10 +15,7 @@ app.get("/", function (req: Request, res: Response) {
   var model: Model = models[Math.floor(Math.random() * models.length + 1) - 1];
   res.render("template.html", {
     root: __dirname,
-    name: model.name,
-    usdz_link: model.usdz_link,
-    glb_link: model.glb_link,
-    letter: model.letter
+    model: model
   });
 });
 
